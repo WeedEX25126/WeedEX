@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Página Básica - Visual Studio Code</title>
+  <title>ValorEX - Tienda de ropa</title>
 
   <style>
     :root{
@@ -66,8 +66,7 @@
       border-radius:var(--radius);
       padding:1.5rem;
       box-shadow:var(--shadow);
-      display:grid;grid-template-columns:1fr 340px;
-      gap:1rem;align-items:center;
+      text-align:left;
     }
 
     .hero h1{margin:0;font-size:1.6rem}
@@ -77,8 +76,8 @@
     .gallery{
       margin-top:2rem;
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-      gap:1rem;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:1.5rem;
     }
 
     .photo-card{
@@ -97,7 +96,7 @@
 
     .photo-card img{
       width:100%;
-      height:150px; /* más pequeño que antes */
+      height:250px;
       object-fit:cover;
     }
 
@@ -107,7 +106,7 @@
     }
 
     .photo-card .small-text{
-      font-size:.85rem;
+      font-size:.9rem;
       color:#9ca3af;
       margin-top:.25rem;
     }
@@ -116,10 +115,6 @@
       margin-top:2rem;
       color:var(--muted);
       text-align:center;
-    }
-
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr;}
     }
   </style>
 </head>
@@ -142,45 +137,43 @@
 
     <main>
       <section class="hero">
-        <div>
-          <h1>Ropa popular</h1>
-          <p>Estas son algunas de nuestras prendas de ropa</p>
+        <h1>Ropa popular</h1>
+        <p>Estas son algunas de nuestras prendas de ropa</p>
+      </section>
+
+      <!-- Galería de fotos -->
+      <section class="gallery">
+        <div class="photo-card">
+          <img src="60501403_o_a2.webp" alt="Chaqueta Napajiri">
+          <p>Chaqueta Napajiri</p>
+          <p class="small-text">180€</p>
         </div>
-
-        <!-- Galería de fotos -->
-        <section class="gallery">
-          <div class="photo-card">
-            <img src="60501403_o_a2.webp" alt="Foto 1">
-            <p>Chaqueta Napajiri</p>
-            <p class="small-text">180€</p>
-          </div>
-          <div class="photo-card">
-            <img src="0400021533374_BLACK.avif" alt="Foto 2">
-            <p>Chaqueta Moncler</p>
-            <p class="small-text">120€</p>
-          </div>
-          <div class="photo-card">
-            <img src="f61c25c3ce622456ea75faff897c5e3a.jpg" alt="Foto 3">
-            <p>Canada goose</p>
-            <p class="small-text">150€</p>
-          </div>
-           <div class="photo-card">
-            <img src="jd_764787_c.webp" alt="Foto 1">
-            <p>Corta vientos Lacoste</p>
-            <p class="small-text">120€</p>
-          </div>
-          <div class="photo-card">
-            <img src="c7355018d28942b1b9e557ac77670515.webp" alt="Foto 2">
-            <p>Corta vientos Nike</p>
-            <p class="small-text">120€</p>
-          </div>
-          <div class="photo-card">
-            <img src="under-armour_376506_1376795_001_20230630T091129_01.webp" alt="Foto 3">
-            <p>Corta vientos Under Armour</p>
-            <p class="small-text">100€</p>
-          </div>
-        </section>
-
+        <div class="photo-card">
+          <img src="0400021533374_BLACK.avif" alt="Chaqueta Moncler">
+          <p>Chaqueta Moncler</p>
+          <p class="small-text">120€</p>
+        </div>
+        <div class="photo-card">
+          <img src="f61c25c3ce622456ea75faff897c5e3a.jpg" alt="Canada goose">
+          <p>Canada goose</p>
+          <p class="small-text">150€</p>
+        </div>
+        <div class="photo-card">
+          <img src="jd_764787_c.webp" alt="Corta vientos Lacoste">
+          <p>Corta vientos Lacoste</p>
+          <p class="small-text">120€</p>
+        </div>
+        <div class="photo-card">
+          <img src="c7355018d28942b1b9e557ac77670515.webp" alt="Corta vientos Nike">
+          <p>Corta vientos Nike</p>
+          <p class="small-text">120€</p>
+        </div>
+        <div class="photo-card">
+          <img src="under-armour_376506_1376795_001_20230630T091129_01.webp" alt="Corta vientos Under Armour">
+          <p>Corta vientos Under Armour</p>
+          <p class="small-text">100€</p>
+        </div>
+      </section>
 
       <footer>
         <p>©Copyright Alain Regol Cabrero</p>
