@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WeedEX - Tienda de productos</title>
+  <title>WeedEX - Contacto</title>
 
   <style>
     :root{
@@ -81,53 +81,22 @@
       color:var(--accent);
     }
 
-    .hero{
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:1.5rem;
-      box-shadow:var(--shadow);
-      text-align:left;
+    main{
+      min-height:50vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
 
-    .hero h1{margin:0;font-size:1.6rem}
-    .hero p{color:var(--muted);margin-top:.6rem;line-height:1.5}
-
-    .gallery{
-      margin-top:2rem;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:1.5rem;
-    }
-
-    .photo-card{
+    .contact-card{
       background:var(--card);
       border-radius:var(--radius);
       box-shadow:var(--shadow);
-      overflow:hidden;
+      padding:2rem;
       text-align:center;
-      padding-bottom:.8rem;
-      transition:transform 0.2s ease;
-    }
-
-    .photo-card:hover{
-      transform:scale(1.03);
-    }
-
-    .photo-card img{
-      width:100%;
-      height:250px;
-      object-fit:cover;
-    }
-
-    .photo-card p{
-      margin:.5rem 0 0;
+      font-size:1.25rem;
+      font-weight:700;
       color:var(--muted);
-    }
-
-    .photo-card .small-text{
-      font-size:.9rem;
-      color:#9ca3af;
-      margin-top:.25rem;
     }
 
     footer{
@@ -157,48 +126,14 @@
     </header>
 
     <main>
-      <section class="hero">
-        <h1>Ropa popular</h1>
-        <p>Estas son algunas de nuestras prendas de ropa</p>
-      </section>
-
-      <section class="gallery">
-        <div class="photo-card">
-          <img src="60501403_o_a2.webp" alt="Chaqueta Napajiri">
-          <p>Chaqueta Napajiri</p>
-          <p class="small-text">180€</p>
-        </div>
-        <div class="photo-card">
-          <img src="0400021533374_BLACK.avif" alt="Chaqueta Moncler">
-          <p>Chaqueta Moncler</p>
-          <p class="small-text">120€</p>
-        </div>
-        <div class="photo-card">
-          <img src="f61c25c3ce622456ea75faff897c5e3a.jpg" alt="Canada goose">
-          <p>Canada goose</p>
-          <p class="small-text">150€</p>
-        </div>
-        <div class="photo-card">
-          <img src="jd_764787_c.webp" alt="Corta vientos Lacoste">
-          <p>Corta vientos Lacoste</p>
-          <p class="small-text">120€</p>
-        </div>
-        <div class="photo-card">
-          <img src="c7355018d28942b1b9e557ac77670515.webp" alt="Corta vientos Nike">
-          <p>Corta vientos Nike</p>
-          <p class="small-text">120€</p>
-        </div>
-        <div class="photo-card">
-          <img src="under-armour_376506_1376795_001_20230630T091129_01.webp" alt="Corta vientos Under Armour">
-          <p>Corta vientos Under Armour</p>
-          <p class="small-text">100€</p>
-        </div>
-      </section>
-
-      <footer>
-        <p>©Copyright Alain Regol Cabrero</p>
-      </footer>
+      <div class="contact-card">
+        @instagram
+      </div>
     </main>
+
+    <footer>
+      <p>©Copyright Alain Regol Cabrero</p>
+    </footer>
   </div>
 </body>
 </html>
